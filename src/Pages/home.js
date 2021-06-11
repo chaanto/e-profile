@@ -1,4 +1,4 @@
-import '../App.css';
+import './home.css';
 import Typical from 'react-typical';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Image } from "react-bootstrap";

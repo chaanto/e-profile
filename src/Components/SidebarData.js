@@ -10,24 +10,24 @@ export const SidebarData = [
         title: 'Home',
         path: '/',
         icon: < GiIcons.GiCoffeeCup /> ,
-        className: 'nav-text'
+        className: 'nav-text',
     },
     {
         title: 'About',
         path: '/about',
         icon: < MdIcons.MdPermDeviceInformation /> ,
-        className: 'nav-text'
+        className: 'nav-text',
     },
     {
         title: 'Project',
         path:'/project',
         icon: <RiIcons.RiComputerFill/>,
-        className : 'nav-text'
+        className: 'nav-text',
     },
     {
         title: 'Resume',
         path:'/resume',
         icon: <AiIcons.AiOutlineHistory/>,
-        className : 'nav-text'
+        className: 'nav-text',
     },
 ];
