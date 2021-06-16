@@ -6,7 +6,7 @@ import { Image } from "react-bootstrap";
 function App() {
   return (
     <>
-        <div className="App">
+        <div class Name="App">
         <header className="App-header">
             <Image 
             src="https://avatars.githubusercontent.com/u/43694261?s=400&u=71ed9f6f84254f13c2a56dbfe971fd2fa72518e7&v=4" 

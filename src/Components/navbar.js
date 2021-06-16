@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './navbar.css';
 import { IconContext } from 'react-icons';
-import { MdFingerprint } from 'react-icons/md';
 
 function Navbar() {
     const [sidebar, setSidebar] = useState(false)

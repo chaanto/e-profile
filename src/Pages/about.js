@@ -22,14 +22,8 @@ function App() {
                 loop={Infinity}
                 wrapper='b' 
                 steps={[
-                'Web Developer',
-                2000,
-                'Mobile Developer',
-                2000,
-                'Gamer',
-                2000,
-                'Reader.',
-                2000,
+                'Web Developer.',
+                3000,
                 ]}
             />
             </p>
