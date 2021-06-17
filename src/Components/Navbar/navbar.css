@@ -1,4 +1,9 @@
-.navbar {
+* {
+    font-family: 'Overpass', sans-serif;
+}
+
+
+/* .navbar {
     background-color: transparent;
     height: 80px;
     display: flex;
@@ -30,13 +35,8 @@
     display: flex;
     justify-content: center;
     position: fixed;
+    left: -1.5%;
     top: 0px;
-    left: 0%;
-}
-
-.nav-menu.active {
-    left: -30px;
-    transition: 350ms;
 }
 
 .nav-text {
@@ -60,7 +60,7 @@
     border-radius: 4px;
 }
 
-.nav-bar a:hover {
+.nav-text a:hover {
     background-color: blueviolet;
 }
 
@@ -129,4 +129,4 @@ span {
         left: 0px;
         transition: 350ms;
     }
-}
+} */

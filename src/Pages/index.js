@@ -1,4 +1,4 @@
-import './home.css';
+import './index.css';
 import Typical from 'react-typical';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Image } from "react-bootstrap";
@@ -6,12 +6,21 @@ import * as DiIcons from 'react-icons/di';
 import * as FaIcons from 'react-icons/fa';
 import * as ImIcons from 'react-icons/im';
 import { IconContext } from 'react-icons';
+import Navbar from '../Components/Navbar/navbar';
+import About from './about';
+import Project from './portfolio';
+import Resume from './resume';
+import HeroSection from '../Components/Hero/index';
+import Sidebar from '../Components/Sidebar/sidebar';
 
 function Home() {
   return (
     <>
       <IconContext.Provider value={{color : 'black'}}>
-        <div className="container">
+        <Navbar/>
+        <Sidebar/>
+        {/* <HeroSection/> */}
+        {/* <div className="container">
           <div className="text-center">
             <Image src="https://avatars.githubusercontent.com/u/43694261?s=400&u=71ed9f6f84254f13c2a56dbfe971fd2fa72518e7&v=4"
               alt="logo" 
@@ -33,9 +42,6 @@ function Home() {
                   ]}
                 />
               </p>
-              <p>
-                Find Me in
-              </p>
               <div className="col">
                 <a href="https://github.com/chaanto" target="_blank" rel="noreferrer">
                   <DiIcons.DiGithubAlt size={30}/>
@@ -50,7 +56,7 @@ function Home() {
                 
             </div>
           </div>
-        </div>
+        </div> */}
       </IconContext.Provider>
     </>
   );

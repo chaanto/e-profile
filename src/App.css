@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Overpass', sans-serif;
-    src: url('https://fonts.googleapis.com/css?family=Overpass');
-}
-
 * {
     font-family: 'Overpass', sans-serif;
     margin: 0;
