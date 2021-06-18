@@ -1,23 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import { Link } from 'react-router-dom';
-import { SidebarData } from './SidebarData';
-import './navbar.css';
+import { SidebarData } from '../navbarData';
 import { IconContext } from 'react-icons';
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavText } from './navbarElement';
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavText, NavBtn, NavBtnLink } from './navbarElement';
 
-function Navbar() {
-    const [sidebar, setSidebar] = useState(false)
+function Navbar({ toggle }) {
 
-    const showSidebar = () => setSidebar(!sidebar)
     return ( 
         <>
         <IconContext.Provider value={{color : 'black'}}>
             <Nav>
                 <NavbarContainer>
                     <NavLogo to="/">Charlie</NavLogo>
-                    <MobileIcon>
+                    <MobileIcon onClick={toggle}>
                         <FaIcons.FaBars />
                     </MobileIcon>
                     <NavMenu>
@@ -32,6 +27,9 @@ function Navbar() {
                             );
                         })}
                     </NavMenu>
+                    {/* <NavBtn>
+                        <NavBtnLink to="mailto:dev.charlieaprilianto">Mail Me!</NavBtnLink>
+                    </NavBtn> */}
                 </NavbarContainer>
             </Nav>
         </IconContext.Provider>

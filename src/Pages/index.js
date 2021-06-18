@@ -1,25 +1,22 @@
-import './index.css';
-import Typical from 'react-typical';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Image } from "react-bootstrap";
-import * as DiIcons from 'react-icons/di';
-import * as FaIcons from 'react-icons/fa';
-import * as ImIcons from 'react-icons/im';
+import React, { useState } from 'react';
 import { IconContext } from 'react-icons';
 import Navbar from '../Components/Navbar/navbar';
-import About from './about';
-import Project from './portfolio';
-import Resume from './resume';
-import HeroSection from '../Components/Hero/index';
 import Sidebar from '../Components/Sidebar/sidebar';
+import HeroSection from '../Components/HeroSection/';
 
 function Home() {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggle = () => setIsOpen(!isOpen)
+
   return (
     <>
       <IconContext.Provider value={{color : 'black'}}>
-        <Navbar/>
-        <Sidebar/>
-        {/* <HeroSection/> */}
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <Navbar toggle={toggle} />
+        <HeroSection />
+
+
         {/* <div className="container">
           <div className="text-center">
             <Image src="https://avatars.githubusercontent.com/u/43694261?s=400&u=71ed9f6f84254f13c2a56dbfe971fd2fa72518e7&v=4"
