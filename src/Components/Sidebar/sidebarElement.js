@@ -90,3 +90,7 @@ export const SidebarRoute = styled(LinkR)`
 
     }
 `;
+
+export const SidebarItem = styled.div`
+    display: flexbox;
+`

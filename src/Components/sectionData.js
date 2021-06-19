@@ -1,0 +1,16 @@
+export const homeObjOne = {
+    id: 'about',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'About',
+    headline: 'My Passion',
+    description: 'Coder who love coding accompanied by a cup of coffee. Coder with big interest on ReactJs, Django, MonggoDB and React Native.',
+    buttonLabel: 'Get Something',
+    imgStart: false,
+    img: require('../images/car.svg').default,
+    alt: 'Human',
+    dark: true,
+    primary: true,
+    darkText: false,
+}

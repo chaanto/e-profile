@@ -1,7 +1,7 @@
 import React from 'react'
 import { SidebarContainer, Icon, CloseIcon } from './sidebarElement';
 import { SidebarData } from '../navbarData';
-import { SidebarWrapper, SidebarLink, NavText, SidebarMenu } from './sidebarElement';
+import { SidebarWrapper, SidebarLink, NavText, SidebarMenu, SidebarItem } from './sidebarElement';
 import { IconContext } from 'react-icons';
 
 const sidebar = ({isOpen, toggle}) => {
@@ -13,12 +13,14 @@ const sidebar = ({isOpen, toggle}) => {
                 </Icon>
                 <SidebarWrapper>
                     <SidebarMenu>
-                        {SidebarData.map((item) => {
+                        {SidebarData.map((item, index) => {
                             return (
+                            <SidebarItem key={index} >
                                 <SidebarLink to={item.path}>
                                     <NavText>{item.icon}</NavText>
                                     <NavText>{item.title}</NavText>
                                 </SidebarLink>
+                            </SidebarItem>
                             );
                         })}
                     </SidebarMenu>

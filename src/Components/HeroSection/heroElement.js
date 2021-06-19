@@ -7,11 +7,26 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 500px;
+    height: 700px;
     position: relative;
     z-index: 1;
 
-    /* add before style */
+    :before {
+        content: '';
+        position: absolute;
+        top:0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 400px;
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 250px;
+    }
 `;
 
 export const HeroBg = styled.div`
@@ -51,6 +66,11 @@ export const HeroTitle = styled.div`
     float: left;
     position: relative;
 
+    @media screen and (max-width: 1024px) {
+        font-size: 48px;
+        left: -30%;
+    }
+
     @media screen and (max-width: 768px) {
         font-size: 40px;
         left: -10%;
@@ -58,7 +78,7 @@ export const HeroTitle = styled.div`
 
     @media screen and (max-width: 480px) {
         font-size: 24px;
-        left: -10%;
+        left: -5%;
     }
 `;
 export const HeroP = styled.p`
@@ -70,14 +90,20 @@ export const HeroP = styled.p`
     position: relative;
 
 
+    @media screen and (max-width: 1024px) {
+        font-size: 26px;
+        left: -17%;
+    }
+
+
     @media screen and (max-width: 768px) {
         font-size: 24px;
-        left: -20%;
+        left: -18%;
     }
 
     @media screen and (max-width: 480px) {
         font-size: 14px;
-        left: -20%;
+        left: -15%;
     }
 
 `;
@@ -86,21 +112,17 @@ export const HeroP = styled.p`
 export const HeroLogo = styled.a`
     color: black;
     padding: 5px 15px 0px 0px;
-   
+    font-size: 30px;
+
     @media screen and (max-width: 768px) {
-        /* width: 20px; */
+        font-size: 25px;
     }
 
     @media screen and (max-width: 480px) {
-        /* left: -20%; */
+        font-size: 20px;
     }
 
 `;
-
-export const HeroLogoSize = styled.span`
-    width: 30px;
-    height: 30px;
-`
 
 export const HeroLogoAdjuster = styled.div`
     display: grid;
@@ -110,12 +132,51 @@ export const HeroLogoAdjuster = styled.div`
     position: relative;
     left: -69%;
 
+    @media screen and (max-width: 1024px) {
+        left: 10%;
+    }
+
     @media screen and (max-width: 768px) {
-        width: 100%
+        left: -45%;
     }
 
     @media screen and (max-width: 480px) {
-        /* left: -20%; */
+        left: -35%;
     }
 
-`
+`;
+
+
+export const HerocontentFooter = styled.div`
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-size: 30px;
+    left: 30%;
+
+    @media screen and (max-width: 1024px) {
+        left: 60%;
+
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 600px;
+        left: 35%;
+
+    }
+
+    @media screen and (max-width: 480px) {
+        padding-top: 300px;
+        left: 35%;
+
+    }
+`;
+
+export const HeroImg = styled.img`
+    width: 30%;
+    height: 30%;
+`;
+
+export const HeroWrapper = styled.div`
+
+`;

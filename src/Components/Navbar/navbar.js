@@ -2,7 +2,7 @@ import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import { SidebarData } from '../navbarData';
 import { IconContext } from 'react-icons';
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavText, NavBtn, NavBtnLink } from './navbarElement';
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavText } from './navbarElement';
 
 function Navbar({ toggle }) {
 
