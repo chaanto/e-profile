@@ -2,7 +2,7 @@ import React from 'react';
 import { InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine, Heading, Subtitle, Column2, ImgWrap, Img, BtnWrap} from './InfoElement';
 import { Button } from '../buttonElement';
 
-function InfoSection({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark}) {
+function InfoSection({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, buttonLogo}) {
 
     return (
         <>
@@ -11,7 +11,7 @@ function InfoSection({lightBg, id, imgStart, topLine, lightText, headline, darkT
                     <InfoRow imgStart={imgStart}>
                         <Column1>
                             <TextWrapper>
-                                <TopLine>{topLine}</TopLine>
+                                <TopLine lightText={lightText}>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <BtnWrap>
@@ -23,9 +23,8 @@ function InfoSection({lightBg, id, imgStart, topLine, lightText, headline, darkT
                                     offset={80}
                                     primary={ primary ? 1 : 0}
                                     dark={dark ? 1: 0}
-                                    >{buttonLabel}</Button>
+                                    >{buttonLogo} {buttonLabel}</Button>
                                 </BtnWrap>
-                                
                             </TextWrapper>
                         </Column1>
                         <Column2>
