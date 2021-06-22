@@ -6,7 +6,7 @@ import CharlieBW from '../../images/charlie-bw-ver.png'
 
 const HeroSection = () => {
     return (
-        <HeroContainer>
+        <HeroContainer id="/">
             <HeroContent>
                 <HeroTitle>
                     Charlie Aprilianto 

@@ -1,6 +1,3 @@
-import * as HiIcons from 'react-icons/hi';
-import * as FaIcons from 'react-icons/fa';
-
 let dob = '2000-04-05'
 
 const ageNumber = (dob) => {
@@ -23,9 +20,9 @@ export const homeObjOne = {
     lightText: true,
     lightTextDesc: true,
     topLine: 'About',
-    headline: 'My Passion',
-    description: 'I am a ' + `${ageNumber(dob)}` + ' age programmer love coding and accompanied by a cup of coffee. Have a good problem solving knowledge and big interest on ReactJs, Django, MongoDB and React Native.\
-    Coder that live in Batam, Indonesia.',
+    headline: 'Charlie',
+    description: `The ${ageNumber(dob)} age programmer love coding and accompanied by a cup of coffee. Have a good problem solving knowledge and big interest on ReactJs, Django, MongoDB and React Native.\
+    Coder who live in Batam, Indonesia with the determination to become a fullstack developer.`,
     imgStart: false,
     img: require('../images/project1.svg').default,
     alt: 'Human',

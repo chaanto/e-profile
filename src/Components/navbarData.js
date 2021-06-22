@@ -14,19 +14,19 @@ export const SidebarData = [
     },
     {
         title: 'About',
-        path: '/about',
+        path: 'about',
         icon: < MdIcons.MdPermDeviceInformation /> ,
         className: 'nav-text',
     },
     {
         title: 'Project',
-        path:'/project',
+        path:'project',
         icon: <RiIcons.RiComputerFill/>,
         className: 'nav-text',
     },
     {
         title: 'Resume',
-        path:'/resume',
+        path:'resume',
         icon: <AiIcons.AiOutlineHistory/>,
         className: 'nav-text',
     },
