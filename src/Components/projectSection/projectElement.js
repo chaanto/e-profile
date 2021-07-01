@@ -73,7 +73,6 @@ export const ProjectH1 = styled.h1`
 
     @media screen and (max-width: 768px) {
         font-size: 2rem;
-        padding-top: 20px;
     }
     
     @media screen and (max-width: 480px) {
