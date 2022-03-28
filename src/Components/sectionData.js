@@ -1,3 +1,6 @@
+import * as FaIcons from 'react-icons/fa';
+import * as HiIcons from 'react-icons/hi';
+
 let dob = '2000-04-05'
 
 const ageNumber = (dob) => {
@@ -21,18 +24,15 @@ export const homeObjOne = {
     lightTextDesc: true,
     topLine: 'About',
     headline: 'Charlie',
-    description: `The ${ageNumber(dob)} age programmer love coding and accompanied by a cup of coffee. Have a good problem solving knowledge and big interest on ReactJs, Django, MongoDB and React Native.\
-    Coder who live in Batam, Indonesia with the determination to become a fullstack developer.`,
+    description: `The 23 age programmer love coding and accompanied by a cup of coffee. Have a good problem solving knowledge and high curiosity on programming.\
+    Coder who live in Batam that near with singapore and have determination to become a world class developer.`,
     imgStart: false,
     img: require('../images/project1.svg').default,
     alt: 'Human',
     dark: true,
     primary: true,
     darkText: false,
-    // buttonProps :{buttonLogo : [< FaIcons.FaWhatsapp / > , < HiIcons.HiOutlineMail / >],  buttonLabel :},
-    // buttonLogo: [ < FaIcons.FaWhatsapp / > , < HiIcons.HiOutlineMail / > ],
-    buttonLabel: 'Whatsapp',
-    // buttonLabel: ['Whatsapp', 'Email'],
-    // buttonColor: [ , 'Email'],
+    buttonLogo: [ < FaIcons.FaWhatsapp / > , < HiIcons.HiOutlineMail / > ],
+    buttonLabel: ['Whatsapp', 'Email'],
 
 }
