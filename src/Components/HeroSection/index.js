@@ -21,6 +21,7 @@ const HeroSection = () => {
                         4000,
                         ]}
                     />
+                        
                 </HeroP>
                 <HeroLogoAdjuster>
                     {HeroData.map((item, index) => {

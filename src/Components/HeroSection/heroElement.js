@@ -88,6 +88,7 @@ export const HeroP = styled.p`
     max-width: 600px;
     left: -47%;
     position: relative;
+    
 
 
     @media screen and (max-width: 1024px) {
