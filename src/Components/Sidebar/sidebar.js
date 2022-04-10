@@ -4,6 +4,7 @@ import { SidebarData } from '../navbarData';
 import { SidebarWrapper, SidebarLink, NavText, SidebarMenu, SidebarItem } from './sidebarElement';
 import { IconContext } from 'react-icons';
 
+
 const sidebar = ({isOpen, toggle}) => {
     return (
         <IconContext.Provider value={{color : 'black'}}>
@@ -16,7 +17,7 @@ const sidebar = ({isOpen, toggle}) => {
                         {SidebarData.map((item, index) => {
                             return (
                             <SidebarItem key={index} >
-                                <SidebarLink to={item.path}>
+                                <SidebarLink to={item.path} onClick={toggle}>
                                     <NavText>{item.icon}</NavText>
                                     <NavText>{item.title}</NavText>
                                 </SidebarLink>

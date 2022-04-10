@@ -161,23 +161,7 @@ export const HerocontentFooter = styled.div`
     position: relative;
     align-items: center;
     font-size: 30px;
-    left: 30%;
-
-    @media screen and (max-width: 1024px) {
-        left: 50%;
-
-    }
-
-    @media screen and (max-width: 768px) {
-        padding-top: 0px;
-        left: 65%;
-
-    }
-
-    @media screen and (max-width: 480px) {
-        padding-top: 0px;
-        left: 65%;
-    }
+    direction: rtl;
 `;
 
 export const HeroImg = styled.img`
