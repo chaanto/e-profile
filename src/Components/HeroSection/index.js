@@ -17,7 +17,7 @@ const HeroSection = () => {
                         loop={Infinity}
                         wrapper='b'
                         steps={[
-                        ' Front-end Developer.',
+                        ' Software Engineer.',
                         4000,
                         ]}
                     />
