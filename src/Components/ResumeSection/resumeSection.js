@@ -17,10 +17,10 @@ function resumeSection() {
                     <div class="col-lg-6">
                         <div class="resume-item">
                             <h4>Software Engineer &amp; Technical Consultant</h4>
-                            <h5>Feb 2019 - Present</h5>
+                            <h5>Feb 2019 - May 2022</h5>
                             <p><em>TigernixERP, PT Tigernix Solution Indonesia</em></p>
                             <ul>
-                                <li>Using Python, Linux, Odoo Framework, and TigernixFramework.</li>
+                                <li>Using Python, Linux, and Odoo Framework.</li>
                                 <li>Collaborate with Front-end team for having nice UI/UX for web-apps.</li>
                                 <li>Design pattern system workflow based on requirement and request from customer.</li>
                                 <li>Updating Server performace and Optimize Function.</li>
