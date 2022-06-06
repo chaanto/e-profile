@@ -27,7 +27,7 @@ export const projectData = [{
                 photo: ecomWebsite,
                 headline: 'Simple Ecommerce Website using reactjs',
                 label: 'Javascript',
-                path: 'https://github.com/chaanto/react-ecommerce'
+                path: 'https://react-ecom-test-live.herokuapp.com/'
             },
         ]
 
