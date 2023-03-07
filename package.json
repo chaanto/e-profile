@@ -2,6 +2,9 @@
     "name": "e-profile",
     "version": "0.1.0",
     "private": true,
+    "engines": {
+        "node": "18.x"
+     },
     "homepage": "https://chaanto.github.io",
     "dependencies": {
         "-": "0.0.1",
